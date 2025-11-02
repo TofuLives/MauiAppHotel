@@ -7,8 +7,8 @@ public partial class ContratacaoHospedagem : ContentPage
     App PropriedadesApp;
 
     public ContratacaoHospedagem()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         PropriedadesApp = (App)Application.Current;
 
@@ -46,7 +46,7 @@ public partial class ContratacaoHospedagem : ContentPage
         }
     }
 
-    private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e)
+    private void dtpck_checkin_DateSelected(object sender, DateChangedEventArgs e){
     {
         DatePicker elemento = sender as DatePicker;
 
@@ -54,5 +54,11 @@ public partial class ContratacaoHospedagem : ContentPage
 
         dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
         dtpck_checkout.MaximumDate = data_selecionada_checkin.AddMonths(6);
+    }
+}
+
+private async void Sobre_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Views.Sobre());
     }
 }
