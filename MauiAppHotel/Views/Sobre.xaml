@@ -7,22 +7,20 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="16" VerticalOptions="CenterAndExpand">
 
-            <!-- Cabeçalho visual -->
-            <Frame CornerRadius="12" Padding="12" HasShadow="True">
+            <Frame CornerRadius="12" Padding="12" HasShadow="True" BackgroundColor="{StaticResource BrownLight}">
                 <VerticalStackLayout HorizontalOptions="Center" Spacing="6">
                     <Label Text="MauiAppHotel" 
                            FontFamily="Kalam" 
                            FontSize="32" 
                            HorizontalTextAlignment="Center"
-                           TextColor="{StaticResource Primary}"/>
+                           TextColor="{StaticResource Beige}"/>
                     <Label Text="Cálculo de Diária" 
                            FontSize="14" 
                            HorizontalTextAlignment="Center"/>
                 </VerticalStackLayout>
             </Frame>
 
-            <!-- Informações do desenvolvedor -->
-            <Frame Padding="12">
+            <Frame Padding="12" BackgroundColor="{StaticResource BrownLight}">
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Desenvolvedor" FontAttributes="Bold" />
                     <Label Text="Nome: Tiago A. Silva" />
@@ -45,7 +43,6 @@
                 </VerticalStackLayout>
             </Frame>
 
-            <!-- Botão voltar -->
             <Button Text="Voltar" Clicked="Voltar_Clicked" HorizontalOptions="Center" WidthRequest="160"/>
         </VerticalStackLayout>
     </ScrollView>
